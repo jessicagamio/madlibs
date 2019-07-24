@@ -62,7 +62,7 @@ def show_madlib():
     adjective = request.args.get("adjective")
     animal = request.args.get("animal")
     number = request.args.get("number")
-    insults = str(request.args.get("insults"))
+    insults = request.args.getlist("insults")
 
     return render_template("madlib.html",
                            person=person, 
