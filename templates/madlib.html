@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Madlib</title>
+    <link rel="stylesheet" href="static/madlibs.css">
+</head>
+    <body>
+        <div class="container">
+            There once were {{ number }} {{ color }} {{ noun }}s sitting in the Hackbright Lab. When
+            {% for insult in insults %}
+                {{insult}}
+            {% endfor %}
+            {{ person }} went to pick it up, they burst into flames in a totally {{ adjective }} way. The {{ animal }} was alarmed!
+        </div>
+    </body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Madlib</title>
+    <link rel="stylesheet" href="static/madlibs.css">
+</head>
+    <body>
+        <div class="container">
+           Hey {{person}},
+            You are a 
+            {% for insult in insults %}
+                {{insult}}
+            {% endfor %}. Your spirit animal is {{ animal }} is the color {{ color }}. They are {{ number }} of years old. {{ adjective}} {{ noun }}s.
+        </div>
+    </body>
+</html>

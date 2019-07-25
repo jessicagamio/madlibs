@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Madlibs</title>
+    <link rel="stylesheet" href="static/madlibs.css">
+</head>
+<body>
+    <div class="container">
+        <form action="/madlib">
+            Person: <input type="text" name="person"><br>
+            Color: <input type="text" name="color"><br>
+            Noun: <input type="text" name="noun"><br>
+            Adjective: <input type="text" name="adjective"><br>
+            Animal: 
+            <select name="animal">
+                <option value="dog"> Dog
+                <option value="cat"> Cat
+                <option value="dinosaur"> Dinosaur
+            </select><br>
+            Number: <input type="number" name="number"><br>
+            Insults:<br>
+            <input type="checkbox" name="insults" value="tired">tired
+            <input type="checkbox" name="insults" value="sad">sad
+            <input type="checkbox" name="insults" value="nerf herder">nerf herder
+            <input type="checkbox" name="insults" value="hooman">hooman
+            <br>
+            <input type="submit" name="Submit">
+        </form>
+    </div>
+</body>
+</html>

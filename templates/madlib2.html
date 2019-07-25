@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Madlib</title>
+    <link rel="stylesheet" href="static/madlibs.css">
+</head>
+    <body>
+        <div class="container">
+            Hello {{ animal }} {{ person }} we have recieved your {{ adjective }} order of
+            {% for insult in insults %}
+                {{insult}}
+            {% endfor %} 
+            {{ number }} of {{ color }} {{ noun }}s.
+        </div>
+    </body>
+</html>

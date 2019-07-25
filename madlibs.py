@@ -63,8 +63,9 @@ def show_madlib():
     animal = request.args.get("animal")
     number = request.args.get("number")
     insults = request.args.getlist("insults")
-
-    return render_template("madlib.html",
+    page = choice(["madlib.html", "madlib2.html", "madlib3.html"])
+    
+    return render_template(page,
                            person=person, 
                            color=color,
                            noun=noun,
